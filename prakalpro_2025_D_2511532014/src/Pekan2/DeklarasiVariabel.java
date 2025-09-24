@@ -10,7 +10,7 @@ public class DeklarasiVariabel {
 		int kode;
 		boolean isDibawahumur; /* perhatikan penulisan nama variabel */
 		kode = 1234; /* pengisian variabel (assignment */
-		double gaji; /* deklarasi variabel dapat dimana saja */
+		double gaji; /* deklarasi variabel dapat dimana saja *///
 		gaji = 5500000.23;
 		isDibawahumur = true;
 		System.out.println("Status: "+isDibawahumur);

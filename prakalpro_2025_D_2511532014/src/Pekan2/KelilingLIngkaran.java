@@ -4,7 +4,7 @@ public class KelilingLIngkaran {
 	public static void main(String[] args) {
 		final double PI = 3.14; /* Definisi konstanta */
 		double radius = 30;     /* Deklarasi variabel */
-			System.out.println("Keliling = " + 2 * PI * radius);
+			System.out.println("Keliling = " + 2 * PI * radius);//
 	}
 
 }
