@@ -1,4 +1,4 @@
-public class Main {
+public class alproTugasPekan2 {
 	public static void main(String[] args) {
 		// Deklarasi variabel
         int usia = 16;
