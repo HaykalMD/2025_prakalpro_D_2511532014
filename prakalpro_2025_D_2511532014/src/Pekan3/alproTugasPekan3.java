@@ -4,7 +4,7 @@ public class alproTugasPekan3 {
 		int r;
         int t;
         double v;
-        final double pi=3.14;
+        final double π=3.14;
         System.out.println("Program penghitung volume tabung.");
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Masukan jari-jari tabung : ");
@@ -12,7 +12,7 @@ public class alproTugasPekan3 {
         System.out.print("Masukan tinggi tabung: ");
         t = keyboard.nextInt();
         keyboard.close();
-        v= pi*(r*r)*t;
+        v= π*(r*r)*t;
         System.out.println("Volume tabung: "+v);
 	}
 }
