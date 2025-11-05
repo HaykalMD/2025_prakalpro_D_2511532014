@@ -1,0 +1,15 @@
+package Pekan6_2511532014;
+
+import java.util.Scanner;
+
+public class doWhile_2511532014 {
+	public static void main(String[]args) {
+		Scanner console = new Scanner (System.in);
+		String phrase;
+		do { 
+			System.out.print("Input Passsword : ");
+			phrase = console.next();
+		} while (!phrase.equals("abcd"));
+	}
+
+}

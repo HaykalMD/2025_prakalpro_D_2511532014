@@ -1,0 +1,46 @@
+package Pekan6_2511532014;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class GamePenjumlahan_2511532014 {
+	public static void main(String[]args) {
+		Scanner console = new Scanner(System.in);
+		Random rand = new Random();
+		//play until user get 3 wrong
+		int points = 0;
+		int wrong = 0;
+		while (wrong<3) {
+			int result = play(console, rand); // play one game
+			if (result> 0) {
+				points++;		
+			} else {
+				wrong++;
+			}
+		}
+		System.out.println("you earned "+points+" total points.");
+	}
+	// membuat soal penjumlahan ditampilkan ke user
+	public static int play(Scanner console, Random rand) {
+		//print the operands being added, and sum them
+		int operands = rand.nextInt(4)+2;
+		int sum = rand.nextInt(10)+1;
+		System.out.print(sum);
+		for (int i=2;i<=operands;i++) {
+			int n = rand.nextInt(10)+1;
+			sum +=n;
+			System.out.print(" + "+ n);
+		}
+		System.out.print(" = ");
+		
+		//read user guess and report whether is corect
+		int guess = console.nextInt();
+		if (guess==sum) {
+			return 1;
+		} else {
+			System.out.println("Wrong! The answer was "+ sum);
+			return 0;
+		}
+	}
+
+}
